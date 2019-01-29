@@ -32,5 +32,27 @@ public String reverse(String str)
     }
     return sNew;
 }
+public String noCapitals(String sWord)
+{
+return sWord.toLowerCase();
+}
+public String noSpaces(String sWord)
+{
+String a = new String();
+for(int i = 0;i < sWord.length(); i++)
+{
+if(sWord.substring(i,i+1).equals(" "))
+a = a + sWord.substring(i,i+1);
+}
+return a;
+}
+public String onlyLetters(String sString)
+{
+String reult = new String();
+for(int i + 0; i < sString.length(); i++)
+if(Character.isLetter(sString.charAt(i)))
+result = result + sString.substring(i,i+1);
+return result;
+}
 
 
